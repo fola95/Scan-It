@@ -1,5 +1,6 @@
 package com.zoeTech.scanit;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -27,16 +28,6 @@ public class HomeActivity extends ActionBarActivity {
         mConvert=(Button)findViewById(R.id.convert);
         mUploadSend=(Button)findViewById(R.id.upload_send_button);
 
-        mTakePhotoButton.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-
-
-
 
     }
 
@@ -58,5 +49,10 @@ public class HomeActivity extends ActionBarActivity {
             return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    public void beginTakePhotoActivity(View v){
+       Intent intent=new Intent(this, TakePhotoActivity.class);
+        startActivity(intent);
     }
 }

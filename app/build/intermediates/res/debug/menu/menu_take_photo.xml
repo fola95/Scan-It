@@ -5,4 +5,4 @@
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
 </menu>
-<!-- From: file:/C:/Users/Folawiyo/AndroidstudioProjects/ScanIt/app/src/main/res/menu/menu_take_photo.xml -->
+<!-- From: file:/Users/folawiyo/Documents/android-apps/Scan-It/app/src/main/res/menu/menu_take_photo.xml -->
